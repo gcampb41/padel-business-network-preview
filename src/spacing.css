@@ -1,0 +1,10 @@
+/* A tighter page rhythm: reserve the generous scale for the hero and padel-heritage feature. */
+.manifesto,.vision{padding-top:92px;padding-bottom:92px}
+.selection{padding-top:82px;padding-bottom:82px}
+.founders{padding-top:88px;padding-bottom:88px}
+.founders__intro{margin-bottom:42px}
+.membership{padding-top:92px;padding-bottom:92px}
+.membership__heading{margin-bottom:40px}
+.faq{padding-top:78px;padding-bottom:78px}
+.final{min-height:440px}
+@media (max-width:760px){.manifesto,.vision{padding-top:64px;padding-bottom:64px}.selection{padding-top:64px;padding-bottom:64px}.founders{padding-top:66px;padding-bottom:66px}.membership{padding-top:68px;padding-bottom:68px}.faq{padding-top:62px;padding-bottom:62px}.final{min-height:390px}}

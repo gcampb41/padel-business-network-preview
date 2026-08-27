@@ -1,0 +1,20 @@
+.mark {
+  font: initial;
+}
+
+.mark svg {
+  width: 31px;
+  height: 31px;
+}
+
+header .logo { gap: 15px; }
+header .logo .mark { width: 72px; height: 72px; }
+header .logo .mark svg { width: 52px; height: 52px; }
+header .logo > span:last-child { font-size: 13px; line-height: .96; letter-spacing: .14em; }
+
+@media (max-width: 760px) {
+  header .logo { gap: 10px; }
+  header .logo .mark { width: 48px; height: 48px; }
+  header .logo .mark svg { width: 35px; height: 35px; }
+  header .logo > span:last-child { font-size: 10px; }
+}

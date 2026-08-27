@@ -1,0 +1,12 @@
+.founders__grid article{position:relative;overflow:hidden;transition:background .32s ease,color .32s ease,transform .32s cubic-bezier(.2,.7,.2,1)}
+.founders__grid article:before{content:'';position:absolute;inset:auto 0 0;height:5px;background:var(--teal);transform:scaleX(0);transform-origin:left;transition:transform .32s ease}
+.founders__grid article:hover,.founders__grid article:focus-within{z-index:1;color:var(--cream);background:var(--teal);transform:translateY(-9px)}
+.founders__grid article:hover:before,.founders__grid article:focus-within:before{background:var(--yellow);transform:scaleX(1)}
+.founders__grid article:hover b,.founders__grid article:focus-within b{color:var(--yellow)}
+.founders__grid article:hover span,.founders__grid article:focus-within span{color:var(--soft)}
+.founders__grid article:hover p,.founders__grid article:focus-within p{color:rgba(255,255,255,.9)}
+.founders__grid article:nth-child(2):hover,.founders__grid article:nth-child(2):focus-within{background:var(--deep)}
+.founders__grid article:nth-child(3):hover,.founders__grid article:nth-child(3):focus-within{color:var(--ink);background:var(--yellow)}
+.founders__grid article:nth-child(3):hover b,.founders__grid article:nth-child(3):focus-within b{color:var(--teal)}
+.founders__grid article:nth-child(3):hover span,.founders__grid article:nth-child(3):focus-within span,.founders__grid article:nth-child(3):hover p,.founders__grid article:nth-child(3):focus-within p{color:var(--ink)}
+@media (prefers-reduced-motion:reduce){.founders__grid article,.founders__grid article:before{transition:none}}

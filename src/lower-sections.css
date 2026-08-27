@@ -1,0 +1,25 @@
+/* Give the latter part of the story three clearly different moods. */
+.membership{position:relative;background:#dbe8e9;box-shadow:0 0 0 100vmax #dbe8e9;clip-path:inset(0 -100vmax)}
+.membership__grid article{position:relative;background:rgba(255,255,255,.3);transition:background .28s ease,color .28s ease,transform .28s ease}
+.membership__grid article:nth-child(2),.membership__grid article:nth-child(5){background:var(--yellow)}
+.membership__grid article:nth-child(3),.membership__grid article:nth-child(6){color:var(--cream);background:var(--teal)}
+.membership__grid article:nth-child(3) span,.membership__grid article:nth-child(3) p,.membership__grid article:nth-child(6) span,.membership__grid article:nth-child(6) p{color:rgba(255,255,255,.76)}
+.membership__grid article:hover{z-index:1;color:var(--cream);background:var(--deep);transform:translateY(-8px)}
+.membership__grid article:hover span,.membership__grid article:hover p{color:var(--yellow)}
+.vision{position:relative;background:var(--yellow);box-shadow:0 0 0 100vmax var(--yellow);clip-path:inset(0 -100vmax)}
+.vision .side-label,.vision .kicker,.vision__line b{color:var(--teal)}
+.vision__line{border-color:rgba(23,53,62,.3)}
+.vision__line span{position:relative}
+.vision__line span:after{content:'↗';position:absolute;right:8px;top:18px;color:var(--teal);font-size:20px}
+.faq{position:relative;color:var(--cream);background:var(--deep);box-shadow:0 0 0 100vmax var(--deep);clip-path:inset(0 -100vmax)}
+.faq .kicker{color:var(--yellow)}.faq details{border-color:rgba(255,255,255,.22)}.faq p{color:rgba(255,255,255,.72)}.faq summary{transition:color .2s ease}.faq summary:hover{color:var(--yellow)}
+@media(max-width:760px){.membership__grid article:nth-child(2),.membership__grid article:nth-child(5){background:var(--yellow)}}
+@media(prefers-reduced-motion:reduce){.membership__grid article{transition:none}}
+
+.coaching__words { gap: 0; }
+.coaching__words span { position: relative; min-width: 94px; padding: 13px 14px; cursor: default; transition: background .25s ease, color .25s ease, transform .25s cubic-bezier(.2,.7,.2,1), letter-spacing .25s ease; }
+.coaching__words span + span { margin-left: -1px; }
+.coaching__words span:hover { z-index: 1; color: var(--cream); background: var(--teal); letter-spacing: .18em; transform: translateY(-7px) rotate(-2deg); }
+.coaching__words span:nth-child(2):hover { color: var(--ink); background: var(--yellow); transform: translateY(-9px); }
+.coaching__words span:nth-child(3):hover { color: var(--cream); background: var(--deep); transform: translateY(-7px) rotate(2deg); }
+@media(prefers-reduced-motion:reduce){.coaching__words span{transition:none}}
