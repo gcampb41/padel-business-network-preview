@@ -7,5 +7,7 @@ const isProjectPage = process.env.GITHUB_ACTIONS === 'true' && repositoryName &&
 
 export default defineConfig({
   plugins: [react()],
-  base: isProjectPage ? `/${repositoryName}/` : '/',
+  // Relative assets keep exported previews portable when they are served from
+  // a nested output folder (for example by an IDE preview server).
+  base: isProjectPage ? `/${repositoryName}/` : './',
 })
